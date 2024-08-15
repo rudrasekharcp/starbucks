@@ -170,3 +170,30 @@ pipeline {
 }
 
 ```
+ # History 
+  1  docker images
+    2  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    3  unzip awscliv2.zip
+    4  sudo ./aws/install
+    5  sudo apt install unzip
+    6  sudo: ./aws/install:
+    7  aws --version
+    8  ls
+    9  unzip awscliv2.zip
+   10  sudo: ./aws/install:
+   11  aws --version
+   12  sudo ./aws/install
+   13  aws --version
+   14  sudo apt-get install wget apt-transport-https gnupg lsb-release
+   15  wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+   16  echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
+   17  sudo apt-get update
+   18  sudo apt-get install trivy
+   19  trivy --version
+   20  docker run -itd --name sonar -p 9000:9000 sonarqube:lts-community
+   21  docker images
+   22  docker login
+   23  sudo chmod 777 /var/run/docker.sock
+   24  curl -fsSL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh -o install-scout.sh
+   25  sh install-scout.sh
+   27  sudo curl -sSfL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh | sudo sh -s -- -b /usr/local/bin
